@@ -33,7 +33,7 @@ var RevString = inpString.split("").reverse().join("");
 reveString("Shekhar");
 document.write("<br/>--------------------------------<br/>");
 //------------------------------------------------------
-document.write(" Revers the Input Number : <br/>");
+document.write(" Revers the Input Number by using in-built methods: <br/>");
 const Reverse = (number)=> {
   document.write("Input Number : <br/>"+ number + "<br/><br/>");
   var revNumber = parseFloat(number.toString().split('').reverse().join(''))*Math.sign(number);  
@@ -41,7 +41,21 @@ const Reverse = (number)=> {
 }
 Reverse(123764);
 document.write("<br/>--------------------------------<br/>");
-
+//---------------------------------------------------
+document.write(" Revers the Input Number by using loop : <br/>");
+Reverse = function(num) {
+  document.write("Input Number : <br/>"+ num + "<br/><br/>");
+ var reversed_number = 0; 
+	while (num != 0) { 
+    	reversed_number *= 10;	
+    	reversed_number += num % 10;
+    	num -= num % 10;
+		num /= 10;
+      }
+   return document.write(" The Output Reverse Number : <br/>" + reversed_number );
+ };
+ Reverse(12);
+document.write("<br/>--------------------------------<br/>");
 //---------------------------------------------------------
 
 document.write("Check Palyndrom String <br/>");
