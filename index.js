@@ -13,17 +13,16 @@ document.write("<br/><br/>");
 var reverse = function(array){
 var inputArray = array;
 var newArray = [];
-for (var i = inputArray.length-1; i>=0; i--)
-{
-newArray.push(inputArray [i])
-}
+for (var i = inputArray.length-1; i>=0; i--){
+  newArray.push(inputArray [i])
+ }
 return newArray
 }
 document.write("Output Reverse Array : <br/>");
 document.write(reverse(OrignalArray));
 document.write("<br/>--------------------------------<br/>");
-//------------------------------------------------------
 
+//-------------------------------------------------------
 document.write("Reverse String by using in-built Method <br/>");
 function reveString(inpString) {
 document.write(" Input String : <br/>"+ inpString + "<br/><br/>");
@@ -33,6 +32,21 @@ var RevString = inpString.split("").reverse().join("");
 reveString("Shekhar");
 document.write("<br/>--------------------------------<br/>");
 //------------------------------------------------------
+document.write("Reverse String by using Loop <br/>");
+var reverse_string = function(inp_string){
+document.write(" Input String : <br/>"+ inp_string);
+var inputArray = inp_string.split("");
+var newArray = [];
+for (var i = inputArray.length-1; i>=0; i--){
+  newArray.push(inputArray [i])
+}
+ var rev_string = newArray.join("")
+ return document.write(" <br/> Output Reverse String :  <br/>" + rev_string + "<br/>");
+}
+reverse_string("Pathare");
+document.write("<br/>--------------------------------<br/>");
+
+//--------------------------------------------------------
 document.write(" Revers the Input Number by using in-built methods: <br/>");
 const Reverse = (number)=> {
   document.write("Input Number : <br/>"+ number + "<br/><br/>");
