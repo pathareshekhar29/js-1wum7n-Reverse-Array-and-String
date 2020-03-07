@@ -44,7 +44,7 @@ document.write("<br/>--------------------------------<br/>");
 
 //---------------------------------------------------------
 
-document.write("Reverse String by using in-built Method <br/>");
+document.write("Check Palyndrom String <br/>");
 function revString(inpString) {
 document.write(" Input String : <br/>"+ inpString +"<br/>");
 var InpString = inpString.toLowerCase() ;
