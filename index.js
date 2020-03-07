@@ -57,6 +57,7 @@ Reverse(123764);
 document.write("<br/>--------------------------------<br/>");
 //---------------------------------------------------
 document.write(" Revers the Input Number by using loop : <br/>");
+var xyz = prompt("Enter input method");
 Reverse = function(num) {
   document.write("Input Number : <br/>"+ num + "<br/><br/>");
  var reversed_number = 0; 
@@ -68,11 +69,12 @@ Reverse = function(num) {
       }
    return document.write(" The Output Reverse Number : <br/>" + reversed_number );
  };
- Reverse(12);
+ Reverse(xyz);
 document.write("<br/>--------------------------------<br/>");
 //---------------------------------------------------------
 
 document.write("Check Palyndrom String <br/>");
+var _input_string = prompt("Enter the String");
 function revString(inpString) {
 document.write(" Input String : <br/>"+ inpString +"<br/>");
 var InpString = inpString.toLowerCase() ;
@@ -82,5 +84,5 @@ if(InpString===revString){
 }
 return document.write(" <br/> String is not Palyndrom <br/>");
 }
-revString("({[*[{(");
+revString(_input_string);
 document.write("<br/>--------------------------------<br/>");
